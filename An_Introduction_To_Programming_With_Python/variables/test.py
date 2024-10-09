@@ -1,19 +1,11 @@
-def all_actions():
-    counter = 0
+def digit_product(str_num):
+    digits = [int(n) for n in str_num]
+    product = 1
 
-    def increment_counter():
-        nonlocal counter
-        counter += 1
+    for digit in digits:
+        product *= digit
 
-    print(counter)                # 0
+    return product
 
-    increment_counter()
-    print(counter)                # 1
-
-    increment_counter()
-    print(counter)                # 2
-
-    counter = 100
-    increment_counter()
-    print(counter)                # 101
-all_actions()
+result = digit_product('12345')
+print(result)  # expected: 120, actual: 0
