@@ -1,0 +1,30 @@
+def greetings():
+    while True:
+        name = input('What is your name? ')
+        if name:
+            greeting = 'Hello ' + name
+            print(f'{greeting.upper()} WHY ARE WE YELLING?') if name.endswith('!') else print(f'{greeting}.')
+            break
+        else:
+            print('Please do not enter a blank name. Please try again:')
+
+greetings()            
+#Test Cases:
+# We won't be handling capitalization of names since you can have names be !Anthony
+# What is your name? Charles the 3rd
+# hello Charles the 3rd.
+
+# What is your name? X Æ A-Xii
+# hello X Æ A-Xii.
+
+# What is your name? 01-23-45-67-89-ab
+# hello 01-23-45-67-89-ab.
+
+# What is your name? !       
+# HELLO ! WHY ARE WE YELLING?
+
+# What is your name? 
+# Please do not enter a blank name. Please try again:
+
+# What is your name? alex!
+# HELLO ALEX! WHY ARE WE YELLING?
