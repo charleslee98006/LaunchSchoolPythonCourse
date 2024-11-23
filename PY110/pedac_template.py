@@ -1,4 +1,4 @@
-#P
+#Problem
 Input:
     -
 Output:
@@ -9,13 +9,16 @@ Implicit Rules:
     -
 Question:
     - 
-#E
+#Examples
 
 
-#D
+#Data Structures
 
 
-#A
+#Algo
 def something(parameter):
     1.
-#C
+    
+#Code
+
+
